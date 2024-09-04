@@ -4,29 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes App</title>
+    <title>Adarsh Agrahari - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Notes App</h1>
-        <button id="add-note-btn" class="btn-primary">Add Note</button>
+    <!-- Header Section -->
+    <header id="header">
+        <nav class="navbar">
+            <h1 class="logo">Adarsh Agrahari</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-resume">Resume</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="container">
-        <div id="notes-container" class="notes-container">
-            <!-- Notes will be dynamically added here -->
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hello, I'm Adarsh Agrahari</h2>
+            <p>BCA Graduate | Aspiring Frontend Developer | Passionate about Web Design</p>
+            <a href="#projects" class="btn-primary">View My Work</a>
         </div>
-    </main>
+    </section>
 
-    <!-- Modal for adding/editing notes -->
-    <div id="note-modal" class="modal">
-        <div class="modal-content">
-            <textarea id="note-textarea" placeholder="Type your note here..."></textarea>
-            <button id="save-note-btn" class="btn-primary">Save Note</button>
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I’m Adarsh Agrahari, a BCA graduate passionate about web development. I specialize in frontend technologies like HTML, CSS, JavaScript, and React, and I love crafting user-friendly interfaces.
+
+                With a strong foundation in coding and a keen eye for design, I enjoy solving problems and turning ideas into reality. I’m a quick learner, team player, and eager to contribute to impactful projects. Let’s connect and build something amazing together!
+                
+                </p>
         </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="Screenshot 2024-02-20 112033.png" alt="Project 1">
+                    <h3>Text-to-Speech Converter</h3>
+                    <p>A simple yet powerful web application that converts text into spoken words using JavaScript's Web Speech API. This project allows users to input any text and listen to it in a clear, natural voice, making it a useful tool for enhancing accessibility and improving the reading experience. Developed with HTML, CSS, and JavaScript, this project demonstrates my skills in integrating browser APIs and creating interactive, user-friendly web applications.
+
+                       <strong> Tech Stack: HTML, CSS, JavaScript, Web Speech API</strong>
+                        
+                        Features:
+                        
+                        Converts typed text into speech.
+                        Supports multiple voice options and adjustable speaking rates.
+                        User-friendly interface with responsive design.</p>
+                    <a href="https://abderaj17.github.io/tts/" class="btn-secondary">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="Screenshot 2024-09-04 135929.png" alt="Project 2">
+                    <h3>Notes App</h3>
+                    <p>A simple yet effective web-based Notes App designed to help users capture and manage their thoughts effortlessly.<br> The app allows users to create, save, and delete notes with a clean and intuitive interface. Built using HTML, CSS, and JavaScript, this project demonstrates my skills in DOM manipulation, event handling, and working with local storage for persistent data management.
+
+                        <strong>Tech Stack: HTML, CSS, JavaScript</strong>
+                        Features:
+
+                        Add and save notes seamlessly.
+                        Persistent storage using the browser’s local storage. <br>Clean, responsive design for optimal viewing on any device. <br>
+                    <br></p>
+                    <a href="https://abderaj17.github.io/noteAPP/" class="btn-secondary">View Project</a>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Adarsh Agrahari. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/abderaj17" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/adarsh-agrahari-174b0724b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
